@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Main from './Pages/Main';
-import Introduce from './Pages/Introduce';
-import Player from './Pages/Player';
-import Coach from './Pages/Coach';
-import Schedule from './Pages/Schedule';
-import Stats from './Pages/Stats';
-import Gallery from './Pages/Gallery';
-import Notice from './Pages/Notice';
-import FAQ from './Pages/FAQ';
-import Contact from './Pages/Contact';
+import Main from './Pages/Main/Main';
+import Introduce from './Pages/Introduce/Introduce';
+import Player from './Pages/Player/Player';
+import Coach from './Pages/Coach/Coach';
+import Schedule from './Pages/Schedule/Schedule';
+import Stats from './Pages/Stats/Stats';
+import Gallery from './Pages/Gallery/Gallery';
+import Notice from './Pages/Notice/Notice';
+import FAQ from './Pages/FAQ/FAQ';
+import Contact from './Pages/Contact/Contact';
 import reset from './styles/reset.module.css';
 
 function App() {

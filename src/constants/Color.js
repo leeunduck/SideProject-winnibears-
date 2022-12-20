@@ -30,4 +30,6 @@ export default class Colors {
   static select2 = '#e0e0e0';
 
   static menuline = '#8dbcff';
+
+  static border = '#fec61e';
 }
