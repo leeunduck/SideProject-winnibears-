@@ -26,11 +26,11 @@ const SMenuU = styled.ul`
 function CMenuHover1() {
   return (
     <SMenuL>
-      <SMenuA to="/Intro">ADDS소개</SMenuA>
+      <SMenuA to="/Introduce">Team</SMenuA>
       <SSubMenuU>
-        <SSubMenuTopA to="/Intro">ADDS 소개</SSubMenuTopA>
-        <SSubMenuA to="/Members">연구진 소개</SSubMenuA>
-        <SSubMenuA to="/Research">조사설계</SSubMenuA>
+        <SSubMenuTopA to="/Introduce">WinniBears</SSubMenuTopA>
+        <SSubMenuA to="/Player">Player</SSubMenuA>
+        <SSubMenuA to="/Coach">Coach</SSubMenuA>
       </SSubMenuU>
     </SMenuL>
   );
@@ -39,9 +39,10 @@ function CMenuHover1() {
 function CMenuHover2() {
   return (
     <SMenuL>
-      <SMenuA to="/Publication">발간물</SMenuA>
+      <SMenuA to="/Schedule">Games</SMenuA>
       <SSubMenuU>
-        <SSubMenuTopA to="/Publication">발간물</SSubMenuTopA>
+        <SSubMenuTopA to="/Schedule">Schedule</SSubMenuTopA>
+        <SSubMenuA to="/Stats">Stats</SSubMenuA>
       </SSubMenuU>
     </SMenuL>
   );
@@ -50,10 +51,9 @@ function CMenuHover2() {
 function CMenuHover3() {
   return (
     <SMenuL>
-      <SMenuA to="/Resources">데이터</SMenuA>
+      <SMenuA to="/Gallery">Media</SMenuA>
       <SSubMenuU>
-        <SSubMenuTopA to="/Resources">자료안내</SSubMenuTopA>
-        <SSubMenuA to="/Papers">데이터활용논문</SSubMenuA>
+        <SSubMenuTopA to="/Gallery">Gallery</SSubMenuTopA>
       </SSubMenuU>
     </SMenuL>
   );
@@ -62,10 +62,9 @@ function CMenuHover3() {
 function CMenuHover4() {
   return (
     <SMenuL>
-      <SMenuA to="/Notice">소통공간</SMenuA>
+      <SMenuA to="/Notice">Notice</SMenuA>
       <SSubMenuU>
         <SSubMenuTopA to="/Notice">공지사항</SSubMenuTopA>
-        <SSubMenuA to="/Reports">보도자료</SSubMenuA>
         <SSubMenuA to="/FAQ">FAQ</SSubMenuA>
         <SSubMenuA to="/Contact">Contact</SSubMenuA>
       </SSubMenuU>

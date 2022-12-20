@@ -1,7 +1,7 @@
 import Header from '../components/Header';
 
-function Coach() {
+function Player() {
   return <Header />;
 }
 
-export default Coach;
+export default Player;

@@ -1,7 +1,7 @@
 import Header from '../components/Header';
 
-function Coach() {
+function Gallery() {
   return <Header />;
 }
 
-export default Coach;
+export default Gallery;

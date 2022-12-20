@@ -1,7 +1,7 @@
 import Header from '../components/Header';
 
-function Coach() {
+function Schedule() {
   return <Header />;
 }
 
-export default Coach;
+export default Schedule;

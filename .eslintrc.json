@@ -4,9 +4,17 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "prettier/prettier"
+  ],
   "overrides": [],
   "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
@@ -14,7 +22,7 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "semi": ["error", "always"],
-    "quotes": ["off", "single"],
+    "quotes": [2, "single", { "avoidEscape": true }],
     "no-unused-vars": "off",
     "object-curly-spacing": ["error", "always", { "objectsInObjects": true }],
     "react/react-in-jsx-scope": "off",
