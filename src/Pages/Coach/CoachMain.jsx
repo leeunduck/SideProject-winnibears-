@@ -42,10 +42,11 @@ const Title = styled.span`
 
 /* Coach Container */
 const ContentContainer = styled.div`
+  width: 120rem;
   margin: 5rem auto;
   margin-bottom: 10rem;
   display: grid;
-  grid-template-rows: 70rem 33rem;
+  grid-template-columns: 15rem 100rem;
   grid-gap: 5rem;
 `;
 
