@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Colors from '../../constants/Color';
+import HeadCoach from '../../assets/HeadCoach.jpeg';
 
 function CoachMain() {
   return (
@@ -10,7 +11,11 @@ function CoachMain() {
         </SubTitle>
       </TitleContainer>
       <ContentContainer>
-        <div>Content</div>
+        <HeadCTitle>감독</HeadCTitle>
+        <HeadCContent>
+          <HeadIMG src={HeadCoach} alt="HeadCoach" />
+          <div />
+        </HeadCContent>
         <div>Content2</div>
       </ContentContainer>
     </div>
@@ -46,10 +51,33 @@ const ContentContainer = styled.div`
   margin: 5rem auto;
   margin-bottom: 10rem;
   display: grid;
-  grid-template-columns: 15rem 100rem;
-  grid-gap: 5rem;
+  grid-template-rows: 4rem 71.7rem 50rem;
+  grid-gap: 2.5rem;
 `;
 
-/* 감독 타이틀 */
+/* 감독 */
+const HeadCTitle = styled.div`
+  height: 4rem;
+  background-color: ${Colors.blue1_logo};
+  color: ${Colors.white};
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+`;
+
+const HeadCContent = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+`;
+
+const HeadIMG = styled.img`
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export default CoachMain;
