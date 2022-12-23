@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Colors from '../../constants/Color';
 import HeadCoach from '../../assets/HeadCoach.jpeg';
+import Background from '../../assets/Logo2.jpeg';
 
 function CoachMain() {
   return (
@@ -10,11 +11,49 @@ function CoachMain() {
           <Title>COACHES</Title>코칭 스텝
         </SubTitle>
       </TitleContainer>
+
       <ContentContainer>
         <HeadCTitle>감독</HeadCTitle>
         <HeadCContent>
           <HeadIMG src={HeadCoach} alt="HeadCoach" />
-          <div />
+          <Content>
+            <div>HEAD COACH</div>
+            <div>강준규</div>
+
+            <div>
+              <div>이력</div>
+              <div>U-16 청소년 국가대표</div>
+              <div>U-18 청소년 국가대표</div>
+              <div>U-20 국가대표</div>
+            </div>
+
+            <div>
+              <div>학력</div>
+              <div>경희초등학교</div>
+              <div>경희중학교</div>
+              <div>경복고등학교</div>
+              <div>경희대학교 스포츠지도학과 졸업</div>
+            </div>
+
+            <div>
+              <div>경력</div>
+              <div>前 레오스타즈 어린이 아이스하키팀 코치</div>
+              <div>前 서울블랙이글스 어린이 아이스하키팀 코치</div>
+              <div>前 블랙나이츠 어린이 아이스하키팀 코치</div>
+              <div>前 미래로 어린이 아이스하키팀 코치</div>
+              <div>前 경희초등학교 아이스하키팀 코치</div>
+              <div>前 코리아셀렉트 초등대표팀 코치</div>
+            </div>
+
+            <div>
+              <div>現 위니베어스 어린이 아이스하키팀 감독</div>
+              <div>現 솔라베어스 어린이 아이스하키팀 코치</div>
+              <div>現 와이번즈 어린이 아이스하키팀 코치</div>
+              <div>現 티렉스 어린이 아이스하키팀 코치</div>
+              <div>現 목운초 어린이 아이스하키팀 코치</div>
+              <div>現 토탈하키제이 골리 코치</div>
+            </div>
+          </Content>
         </HeadCContent>
         <div>Content2</div>
       </ContentContainer>
@@ -69,15 +108,17 @@ const HeadCTitle = styled.div`
 const HeadCContent = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0 8rem;
 `;
 
 const HeadIMG = styled.img`
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 85%;
+  max-height: 85%;
   object-fit: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+`;
+
+const Content = styled.div`
+  background-image: url(${Background});
 `;
 
 export default CoachMain;

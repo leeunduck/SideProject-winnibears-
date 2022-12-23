@@ -10,7 +10,7 @@ import Gallery from './Pages/Gallery/Gallery';
 import Notice from './Pages/Notice/Notice';
 import FAQ from './Pages/FAQ/FAQ';
 import Contact from './Pages/Contact/Contact';
-import reset from './styles/reset.module.css';
+import './styles/reset.module.css';
 
 function App() {
   return (
