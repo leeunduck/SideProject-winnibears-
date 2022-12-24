@@ -5,7 +5,7 @@ import Background from '../../assets/Logo2.jpeg';
 
 function CoachMain() {
   return (
-    <div>
+    <main>
       <TitleContainer>
         <SubTitle>
           <Title>COACHES</Title>코칭 스텝
@@ -17,47 +17,47 @@ function CoachMain() {
         <HeadCContent>
           <HeadIMG src={HeadCoach} alt="HeadCoach" />
           <Content>
-            <div>HEAD COACH</div>
-            <div>강준규</div>
+            <CoachTitle>HEAD COACH</CoachTitle>
+            <CoachName>강준규</CoachName>
 
-            <div>
-              <div>이력</div>
+            <CoachBox>
+              <CoachEntitle>이력</CoachEntitle>
               <div>U-16 청소년 국가대표</div>
               <div>U-18 청소년 국가대표</div>
               <div>U-20 국가대표</div>
-            </div>
+            </CoachBox>
 
-            <div>
-              <div>학력</div>
+            <CoachBox>
+              <CoachEntitle>학력</CoachEntitle>
               <div>경희초등학교</div>
               <div>경희중학교</div>
               <div>경복고등학교</div>
               <div>경희대학교 스포츠지도학과 졸업</div>
-            </div>
+            </CoachBox>
 
-            <div>
-              <div>경력</div>
+            <CoachBox>
+              <CoachEntitle>경력</CoachEntitle>
               <div>前 레오스타즈 어린이 아이스하키팀 코치</div>
               <div>前 서울블랙이글스 어린이 아이스하키팀 코치</div>
               <div>前 블랙나이츠 어린이 아이스하키팀 코치</div>
               <div>前 미래로 어린이 아이스하키팀 코치</div>
               <div>前 경희초등학교 아이스하키팀 코치</div>
               <div>前 코리아셀렉트 초등대표팀 코치</div>
-            </div>
+            </CoachBox>
 
-            <div>
+            <CoachBox>
               <div>現 위니베어스 어린이 아이스하키팀 감독</div>
               <div>現 솔라베어스 어린이 아이스하키팀 코치</div>
               <div>現 와이번즈 어린이 아이스하키팀 코치</div>
               <div>現 티렉스 어린이 아이스하키팀 코치</div>
               <div>現 목운초 어린이 아이스하키팀 코치</div>
               <div>現 토탈하키제이 골리 코치</div>
-            </div>
+            </CoachBox>
           </Content>
         </HeadCContent>
         <div>Content2</div>
       </ContentContainer>
-    </div>
+    </main>
   );
 }
 
@@ -121,4 +121,29 @@ const Content = styled.div`
   background-image: url(${Background});
 `;
 
+/* 본문 폰트 */
+
+const CoachTitle = styled.div`
+  font-size: 2rem;
+`;
+
+const CoachName = styled.div`
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin: 1.5rem 0;
+`;
+
+const CoachBox = styled.div`
+  margin: 2rem 0;
+  line-height: 2rem;
+  font-size: 1.8rem;
+`;
+
+const CoachEntitle = styled.div`
+  font-size: 1.5rem;
+  font-weight: 550;
+  border-left: 0.2rem solid ${Colors.black};
+  padding-left: 0.5rem;
+  margin: 1rem 0;
+`;
 export default CoachMain;
